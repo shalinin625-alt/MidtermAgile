@@ -1,12 +1,13 @@
 def factorial(n):
-    if n == 0:
+    if n == 0 or n == 1:
         return 1
-    return n * factorial(n-1)
+    else:
+        return n * factorial(n - 1)
 
-print("Factorial Program")
-print(factorial(6))
+num = int(input("Enter a number: "))
+result = factorial(num)
 
-
+print("Factorial of", num, "is", result)
 
 def factorial(n):
     if n == 0:
